@@ -45,3 +45,33 @@ Objectifs :
  - You don't have to use express.js; if you want, you can use another JavaScript web framework or even another language.
    - Personellement j'aime express mais j'ai utilisé la syntaxe ES6 (pas totalement supportée par *node.js* du coup j'ai choisi de "transpiler" le code avec *babel*)
  - You have **documented** your configuration in your report.
+   - Oui
+
+
+## Step 3: Reverse proxy with apache (static configuration)
+
+Objectifs : 
+ -  You have a GitHub repo with everything needed to build the Docker image for the container.
+    -  Oui
+ -  You can do a demo, where you start from an "empty" Docker environment (no container running) and where you start 3 containers: static server, dynamic server and reverse proxy; in the demo, you prove that the routing is done correctly by the reverse proxy.
+    -  Oui simplement exécuter `bar.sh` (vérifier que l'image apache est bien build).
+ -  You can explain and prove that the static and dynamic servers cannot be reached directly (reverse proxy is a single entry point in the infra). 
+    -  Oui car on les lance sans l'option `-p` (port mapping).
+ -  You are able to explain why the static configuration is fragile and needs to be improved.
+    -  Tout simplement si on ajoute un container on ne peut pas prévoir l'adresse IP qu'il obtient. 
+ -  You have **documented** your configuration in your report.
+    -  Oui
+
+
+## Step 4: AJAX requests with JQuery
+
+
+
+Objectifs : 
+
+ -  You have a GitHub repo with everything needed to build the various images.
+ -  You have found a way to replace the static configuration of the reverse proxy (hard-coded IP adresses) with a dynamic configuration.
+ -  You may use the approach presented in the webcast (environment variables and PHP script executed when the reverse proxy container is started), or you may use another approach. The requirement is that you should not have to rebuild the reverse proxy Docker image when the IP addresses of the servers change.
+ -  You are able to do an end-to-end demo with a well-prepared scenario. Make sure that you can demonstrate that everything works fine when the IP addresses change!
+ -  You are able to explain how you have implemented the solution and walk us through the configuration and the code.
+ -  You have **documented** your configuration in your report.
