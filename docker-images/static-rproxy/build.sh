@@ -2,9 +2,15 @@ echo "¯\_(ツ)_/¯ > Starting BUILD Script..."
 
 echo "¯\_(ツ)_/¯ > Building Docker image (res/apache_php)..."
 cd ..
+
 cd apache-php-image/
 ./build.sh
 cd ..
+
+cd express-image/
+./build.sh
+cd ..
+
 cd static-rproxy/
 
 
