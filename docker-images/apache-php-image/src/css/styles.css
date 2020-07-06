@@ -10181,3 +10181,24 @@ form .row:first-child .floating-label-form-group {
 .btn-social {
   margin-bottom: 0.5rem;
 }
+
+.m-entry {
+  margin: 0;
+  font-family: "SB Body", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #1e5791;
+  /* text-align: left; */
+}
+
+.m-button {
+  margin: 0;
+  font-family: "SB Body", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #e9ecef;
+  background-color: #0063b2;
+  /* text-align: left; */
+}

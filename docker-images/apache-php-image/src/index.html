@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>RES-2020 - HTTP Infra</title>
         <!-- Font Awesome icons (free version)-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -33,7 +33,7 @@
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="./img/heig-vd.png" alt="">
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading mb-0">Docker apache_php</h1>
+                <h1 id="mtimer" class="masthead-heading mb-0">Docker apache_php</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -43,6 +43,16 @@
                 <!-- Masthead Subheading-->
                 <p class="pre-wrap masthead-subheading font-weight-light mb-0">RES - 2020 - HTTP Infra</p>
             </div>
+            
+            <div class="container d-flex align-items-center flex-column">
+                <ul class="list-group">
+                    <span id="divmeteo"></span>
+                    <li id="btmeteo" type="button" class="m-button m-entry list-group-item">Load Meteo</li>
+                </ul>
+
+                <!-- <button id="btmeteo" type="button" class="btn btn-primary">Load meteo</button> -->
+            </div>  
+
         </header>
 
         <section class="page-section bg-primary text-white mb-0" id="about">
@@ -126,6 +136,8 @@
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/scripts.js"></script>        
+        <script src="js/step4.js"></script>        
+
     </body>
 </html>

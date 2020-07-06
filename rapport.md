@@ -65,6 +65,24 @@ Objectifs :
 
 ## Step 4: AJAX requests with JQuery
 
+Pour lancer la démo il suffit de lancer le script `bar.sh` du point précédent.
+
+Objectifs : 
+
+ - You have a GitHub repo with everything needed to build the various images.
+   - Oui
+ - You can do a complete, end-to-end demonstration: the web page is dynamically updated every few seconds (with the data coming from the dynamic backend).
+   - Oui mais j'ai choisi de faire avec un bouton. (Pour moi ça ne change rien). J'ai aussi mis un timer...
+ - You are able to prove that AJAX requests are sent by the browser and you can show the content of the responses.
+   - Oui voir le site.
+ - You are able to explain why your demo would not work without a reverse proxy (because of a security restriction).
+   - J'immagine que c'est à cause du CRSF ou CORS. Donc il faut le même hostname que le site pour pouvoir lui faire des requêtes asynchrones. Plus de détails sur: https://developer.mozilla.org/fr/docs/Web/HTTP/CORS/Errors
+ - You have **documented** your configuration in your report.
+   - Oui
+
+
+## Step 5: Dynamic reverse proxy configuration
+
 
 
 Objectifs : 
