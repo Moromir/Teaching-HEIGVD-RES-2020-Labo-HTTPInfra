@@ -83,13 +83,27 @@ Objectifs :
 
 ## Step 5: Dynamic reverse proxy configuration
 
+Le script `run.sh` lance de la bonne manière les containers. Ainsi le reverse proxy reçoit les bons paramètres (les bonnes adresses) au lancement.
+
+Le fichier de lancement principal `apache2-foreground` du container a été modifié pour exécuter un script php pour changer dynamiquement les fichiers de config.
+
+Le PHP est utilisé comme language de script, avec `config-template.php` de sorte à faire la bonne config au lancement du container.
 
 
 Objectifs : 
 
  -  You have a GitHub repo with everything needed to build the various images.
+    -  Oui
  -  You have found a way to replace the static configuration of the reverse proxy (hard-coded IP adresses) with a dynamic configuration.
+    -  Oui
  -  You may use the approach presented in the webcast (environment variables and PHP script executed when the reverse proxy container is started), or you may use another approach. The requirement is that you should not have to rebuild the reverse proxy Docker image when the IP addresses of the servers change.
+    -  Oui, il suffit de lancer : 
+       -  `./bar.sh` dans le *static-rproxy* (point précédent)
+       -  Commenter le lancement de `./build.sh` dans `./bar.sh` dans le dossier *dynamic-rproxy* (step 5)
+       -  puis de lancer `./bar.sh` dans le dossier *dynamic-rproxy* (step 5)
  -  You are able to do an end-to-end demo with a well-prepared scenario. Make sure that you can demonstrate that everything works fine when the IP addresses change!
+    -  Oui voir le point précédent pour le step by step.
  -  You are able to explain how you have implemented the solution and walk us through the configuration and the code.
+    -  Oui
  -  You have **documented** your configuration in your report.
+    -  Oui
